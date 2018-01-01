@@ -1,4 +1,4 @@
-import Vue from "../index";
+import Vue, { VNode } from "../index";
 import { AsyncComponent, ComponentOptions, FunctionalComponentOptions } from "../index";
 import { CreateElement } from "../vue";
 
@@ -196,7 +196,7 @@ Vue.component('component', {
       bind() {},
       inserted() {},
       update() {},
-      componentMounted() {},
+      componentUpdated() {},
       unbind() {}
     },
     b(el, binding, vnode, oldVnode) {
@@ -277,6 +277,19 @@ Vue.component('component-with-scoped-slot', {
   }
 })
 
+Vue.component('narrow-array-of-vnode-type', {
+  render (h): VNode {
+    const slot = this.$scopedSlots.default({})
+    if (typeof slot !== 'string') {
+      const first = slot[0]
+      if (!Array.isArray(first) && typeof first !== 'string') {
+        return first;
+      }
+    }
+    return h();
+  }
+})
+
 Vue.component('functional-component', {
   props: ['prop'],
   functional: true,
@@ -310,7 +323,10 @@ Vue.component("async-component", ((resolve, reject) => {
     resolve(Vue.component("component"));
   }, 0);
   return new Promise((resolve) => {
-    resolve({ functional: true });
+    resolve({
+      functional: true,
+      render(h: CreateElement) { return h('div') }
+    });
   })
 }));
 

@@ -4,6 +4,7 @@ Vue.js is an MIT-licensed open source project. It's an independent project with 
 
 - [Become a backer or sponsor on Patreon](https://www.patreon.com/evanyou).
 - [Become a backer or sponsor on OpenCollective](https://opencollective.com/vuejs).
+- [One-time donation via PayPal or crypto-currencies.](https://vuejs.org/support-vuejs/#One-time-Donations)
 
 #### What's the difference between Patreon and OpenCollective?
 
@@ -13,35 +14,43 @@ Funds donated via Patreon goes directly to support Evan You's full-time work on 
 
 <h2 align="center">Platinum via Patreon</h2>
 
-<p align="center">
-  <a href="https://stdlib.com">
-    <img width="300px" src="https://raw.githubusercontent.com/vuejs/vuejs.org/master/themes/vue/source/images/stdlib.png">
-  </a>
-  <br><br>
-  <a href="https://xiaozhuanlan.com">
-    <img width="200px" src="https://raw.githubusercontent.com/vuejs/cn.vuejs.org/master/themes/vue/source/images/xiaozhuanlan.png">
-  </a>
-  <br><br>
-  <a href="http://tooltwist.com" target="_blank">
-    <img width="280px" src="https://raw.githubusercontent.com/vuejs/vuejs.org/master/themes/vue/source/images/tooltwist.png">
-  </a>
-</p>
+<table>
+  <tbody>
+    <tr>
+      <td align="center" valign="middle">
+        <a href="https://stdlib.com">
+          <img width="220px" src="https://raw.githubusercontent.com/vuejs/vuejs.org/master/themes/vue/source/images/stdlib.png">
+        </a>
+      </td>
+      <td>
+        <a href="https://xiaozhuanlan.com">
+          <img width="160px" src="https://raw.githubusercontent.com/vuejs/cn.vuejs.org/master/themes/vue/source/images/xiaozhuanlan.png">
+        </a>
+      </td>
+      <td>
+        <a href="http://tooltwist.com" target="_blank">
+          <img width="200px" src="https://raw.githubusercontent.com/vuejs/vuejs.org/master/themes/vue/source/images/tooltwist.png">
+        </a>
+      </td>
+      <td>
+        <a href="https://www.infinitynewtab.com/donate/index.html" target="_blank">
+          <img width="200px" src="https://raw.githubusercontent.com/vuejs/vuejs.org/master/themes/vue/source/images/infinitynewtab.png">
+        </a>
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 <h2 align="center">Platinum via OpenCollective</h2>
 
-<a href="https://opencollective.com/vuejs/tiers/platinumsponsors/0/website" target="_blank"><img src="https://opencollective.com/vuejs/tiers/platinumsponsors/0/avatar.svg"></a>
-<a href="https://opencollective.com/vuejs/tiers/platinumsponsors/1/website" target="_blank"><img src="https://opencollective.com/vuejs/tiers/platinumsponsors/1/avatar.svg"></a>
+<a href="https://opencollective.com/vuejs/tiers/platinum-sponsors/0/website" target="_blank"><img src="https://opencollective.com/vuejs/tiers/platinum-sponsors/0/avatar.svg"></a>
+<a href="https://opencollective.com/vuejs/tiers/platinum-sponsors/1/website" target="_blank"><img src="https://opencollective.com/vuejs/tiers/platinum-sponsors/1/avatar.svg"></a>
 
 <h2 align="center">Gold via Patreon</h2>
 
 <table>
   <tbody>
     <tr>
-      <td align="center" valign="middle">
-        <a href="https://deepstreamhub.com" target="_blank">
-          <img width="160px" src="https://raw.githubusercontent.com/vuejs/vuejs.org/master/themes/vue/source/images/deepstream.png">
-        </a>
-      </td>
       <td align="center" valign="middle">
         <a href="https://jsfiddle.net/">
           <img width="140px" src="https://raw.githubusercontent.com/vuejs/vuejs.org/master/themes/vue/source/images/jsfiddle.png">
@@ -62,14 +71,14 @@ Funds donated via Patreon goes directly to support Evan You's full-time work on 
           <img width="160px" src="https://raw.githubusercontent.com/vuejs/vuejs.org/master/themes/vue/source/images/htmlburger.png">
         </a>
       </td>
-    </tr>
-    <tr></tr>
-    <tr>
       <td align="center" valign="middle">
         <a href="https://starter.someline.com/">
           <img width="160px" src="https://raw.githubusercontent.com/vuejs/vuejs.org/master/themes/vue/source/images/someline.png">
         </a>
       </td>
+    </tr>
+    <tr></tr>
+    <tr>
       <td align="center" valign="middle">
         <a href="http://monterail.com/" target="_blank">
           <img width="160px" src="https://raw.githubusercontent.com/vuejs/vuejs.org/master/themes/vue/source/images/monterail.png">
@@ -90,22 +99,22 @@ Funds donated via Patreon goes directly to support Evan You's full-time work on 
           <img width="160px" src="https://raw.githubusercontent.com/vuejs/vuejs.org/master/themes/vue/source/images/tmvuejs2.png">
         </a>
       </td>
+      <td align="center" valign="middle">
+        <a href="https://anymod.com/" target="_blank">
+          <img width="170px" src="https://raw.githubusercontent.com/vuejs/vuejs.org/master/themes/vue/source/images/anymod.png">
+        </a>
+      </td>
     </tr>
     <tr></tr>
     <tr>
-      <td align="center" valign="middle">
-        <a href="https://component.io/" target="_blank">
-          <img width="170px" src="https://raw.githubusercontent.com/vuejs/vuejs.org/master/themes/vue/source/images/component_io.png">
-        </a>
-      </td>
       <td align="center" valign="middle">
         <a href="https://www.xfive.co/" target="_blank">
           <img width="100px" src="https://raw.githubusercontent.com/vuejs/vuejs.org/master/themes/vue/source/images/xfive.png">
         </a>
       </td>
       <td align="center" valign="middle">
-        <a href="http://www.frontenddevelopermeetups.com/" target="_blank">
-          <img width="160px" src="https://raw.githubusercontent.com/vuejs/vuejs.org/master/themes/vue/source/images/frontend-meetups.png">
+        <a href="https://www.frontenddeveloperlove.com/" target="_blank">
+          <img width="160px" src="https://raw.githubusercontent.com/vuejs/vuejs.org/master/themes/vue/source/images/frontend-love.png">
         </a>
       </td>
       <td align="center" valign="middle">
@@ -114,8 +123,8 @@ Funds donated via Patreon goes directly to support Evan You's full-time work on 
         </a>
       </td>
       <td align="center" valign="middle">
-        <a href="https://themeforest.net/item/clear-bootstrap-vuejs-admin-template/19339739?ref=jyostna&utm_source=vuejs&utm_campaign=vuejs_patreon&clickthrough_id=1113830525&redirect_back=true" target="_blank">
-          <img width="150px" src="https://raw.githubusercontent.com/vuejs/vuejs.org/master/themes/vue/source/images/vuejsadmin.png">
+        <a href="https://vuetifyjs.com/" target="_blank">
+          <img width="170px" src="https://raw.githubusercontent.com/vuejs/vuejs.org/master/themes/vue/source/images/vuetify.png">
         </a>
       </td>
     </tr>
@@ -124,36 +133,36 @@ Funds donated via Patreon goes directly to support Evan You's full-time work on 
 
 <h2 align="center">Gold via OpenCollective</h2>
 
-<a href="https://opencollective.com/vuejs/tiers/goldsponsors/0/website" target="_blank"><img src="https://opencollective.com/vuejs/tiers/goldsponsors/0/avatar.svg"></a>
-<a href="https://opencollective.com/vuejs/tiers/goldsponsors/1/website" target="_blank"><img src="https://opencollective.com/vuejs/tiers/goldsponsors/1/avatar.svg"></a>
-<a href="https://opencollective.com/vuejs/tiers/goldsponsors/2/website" target="_blank"><img src="https://opencollective.com/vuejs/tiers/goldsponsors/2/avatar.svg"></a>
-<a href="https://opencollective.com/vuejs/tiers/goldsponsors/3/website" target="_blank"><img src="https://opencollective.com/vuejs/tiers/goldsponsors/3/avatar.svg"></a>
-<a href="https://opencollective.com/vuejs/tiers/goldsponsors/4/website" target="_blank"><img src="https://opencollective.com/vuejs/tiers/goldsponsors/4/avatar.svg"></a>
-<a href="https://opencollective.com/vuejs/tiers/goldsponsors/5/website" target="_blank"><img src="https://opencollective.com/vuejs/tiers/goldsponsors/5/avatar.svg"></a>
-<a href="https://opencollective.com/vuejs/tiers/goldsponsors/6/website" target="_blank"><img src="https://opencollective.com/vuejs/tiers/goldsponsors/6/avatar.svg"></a>
-<a href="https://opencollective.com/vuejs/tiers/goldsponsors/7/website" target="_blank"><img src="https://opencollective.com/vuejs/tiers/goldsponsors/7/avatar.svg"></a>
-<a href="https://opencollective.com/vuejs/tiers/goldsponsors/8/website" target="_blank"><img src="https://opencollective.com/vuejs/tiers/goldsponsors/8/avatar.svg"></a>
-<a href="https://opencollective.com/vuejs/tiers/goldsponsors/9/website" target="_blank"><img src="https://opencollective.com/vuejs/tiers/goldsponsors/9/avatar.svg"></a>
-<a href="https://opencollective.com/vuejs/tiers/goldsponsors/10/website" target="_blank"><img src="https://opencollective.com/vuejs/tiers/goldsponsors/10/avatar.svg"></a>
-<a href="https://opencollective.com/vuejs/tiers/goldsponsors/11/website" target="_blank"><img src="https://opencollective.com/vuejs/tiers/goldsponsors/11/avatar.svg"></a>
-<a href="https://opencollective.com/vuejs/tiers/goldsponsors/12/website" target="_blank"><img src="https://opencollective.com/vuejs/tiers/goldsponsors/12/avatar.svg"></a>
-<a href="https://opencollective.com/vuejs/tiers/goldsponsors/13/website" target="_blank"><img src="https://opencollective.com/vuejs/tiers/goldsponsors/13/avatar.svg"></a>
-<a href="https://opencollective.com/vuejs/tiers/goldsponsors/14/website" target="_blank"><img src="https://opencollective.com/vuejs/tiers/goldsponsors/14/avatar.svg"></a>
-<a href="https://opencollective.com/vuejs/tiers/goldsponsors/15/website" target="_blank"><img src="https://opencollective.com/vuejs/tiers/goldsponsors/15/avatar.svg"></a>
-<a href="https://opencollective.com/vuejs/tiers/goldsponsors/16/website" target="_blank"><img src="https://opencollective.com/vuejs/tiers/goldsponsors/16/avatar.svg"></a>
-<a href="https://opencollective.com/vuejs/tiers/goldsponsors/17/website" target="_blank"><img src="https://opencollective.com/vuejs/tiers/goldsponsors/17/avatar.svg"></a>
-<a href="https://opencollective.com/vuejs/tiers/goldsponsors/18/website" target="_blank"><img src="https://opencollective.com/vuejs/tiers/goldsponsors/18/avatar.svg"></a>
-<a href="https://opencollective.com/vuejs/tiers/goldsponsors/19/website" target="_blank"><img src="https://opencollective.com/vuejs/tiers/goldsponsors/19/avatar.svg"></a>
-<a href="https://opencollective.com/vuejs/tiers/goldsponsors/20/website" target="_blank"><img src="https://opencollective.com/vuejs/tiers/goldsponsors/20/avatar.svg"></a>
-<a href="https://opencollective.com/vuejs/tiers/goldsponsors/21/website" target="_blank"><img src="https://opencollective.com/vuejs/tiers/goldsponsors/21/avatar.svg"></a>
-<a href="https://opencollective.com/vuejs/tiers/goldsponsors/22/website" target="_blank"><img src="https://opencollective.com/vuejs/tiers/goldsponsors/22/avatar.svg"></a>
-<a href="https://opencollective.com/vuejs/tiers/goldsponsors/23/website" target="_blank"><img src="https://opencollective.com/vuejs/tiers/goldsponsors/23/avatar.svg"></a>
-<a href="https://opencollective.com/vuejs/tiers/goldsponsors/24/website" target="_blank"><img src="https://opencollective.com/vuejs/tiers/goldsponsors/24/avatar.svg"></a>
-<a href="https://opencollective.com/vuejs/tiers/goldsponsors/25/website" target="_blank"><img src="https://opencollective.com/vuejs/tiers/goldsponsors/25/avatar.svg"></a>
-<a href="https://opencollective.com/vuejs/tiers/goldsponsors/26/website" target="_blank"><img src="https://opencollective.com/vuejs/tiers/goldsponsors/26/avatar.svg"></a>
-<a href="https://opencollective.com/vuejs/tiers/goldsponsors/27/website" target="_blank"><img src="https://opencollective.com/vuejs/tiers/goldsponsors/27/avatar.svg"></a>
-<a href="https://opencollective.com/vuejs/tiers/goldsponsors/28/website" target="_blank"><img src="https://opencollective.com/vuejs/tiers/goldsponsors/28/avatar.svg"></a>
-<a href="https://opencollective.com/vuejs/tiers/goldsponsors/29/website" target="_blank"><img src="https://opencollective.com/vuejs/tiers/goldsponsors/29/avatar.svg"></a>
+<a href="https://opencollective.com/vuejs/tiers/gold-sponsors/0/website" target="_blank"><img src="https://opencollective.com/vuejs/tiers/gold-sponsors/0/avatar.svg"></a>
+<a href="https://opencollective.com/vuejs/tiers/gold-sponsors/1/website" target="_blank"><img src="https://opencollective.com/vuejs/tiers/gold-sponsors/1/avatar.svg"></a>
+<a href="https://opencollective.com/vuejs/tiers/gold-sponsors/2/website" target="_blank"><img src="https://opencollective.com/vuejs/tiers/gold-sponsors/2/avatar.svg"></a>
+<a href="https://opencollective.com/vuejs/tiers/gold-sponsors/3/website" target="_blank"><img src="https://opencollective.com/vuejs/tiers/gold-sponsors/3/avatar.svg"></a>
+<a href="https://opencollective.com/vuejs/tiers/gold-sponsors/4/website" target="_blank"><img src="https://opencollective.com/vuejs/tiers/gold-sponsors/4/avatar.svg"></a>
+<a href="https://opencollective.com/vuejs/tiers/gold-sponsors/5/website" target="_blank"><img src="https://opencollective.com/vuejs/tiers/gold-sponsors/5/avatar.svg"></a>
+<a href="https://opencollective.com/vuejs/tiers/gold-sponsors/6/website" target="_blank"><img src="https://opencollective.com/vuejs/tiers/gold-sponsors/6/avatar.svg"></a>
+<a href="https://opencollective.com/vuejs/tiers/gold-sponsors/7/website" target="_blank"><img src="https://opencollective.com/vuejs/tiers/gold-sponsors/7/avatar.svg"></a>
+<a href="https://opencollective.com/vuejs/tiers/gold-sponsors/8/website" target="_blank"><img src="https://opencollective.com/vuejs/tiers/gold-sponsors/8/avatar.svg"></a>
+<a href="https://opencollective.com/vuejs/tiers/gold-sponsors/9/website" target="_blank"><img src="https://opencollective.com/vuejs/tiers/gold-sponsors/9/avatar.svg"></a>
+<a href="https://opencollective.com/vuejs/tiers/gold-sponsors/10/website" target="_blank"><img src="https://opencollective.com/vuejs/tiers/gold-sponsors/10/avatar.svg"></a>
+<a href="https://opencollective.com/vuejs/tiers/gold-sponsors/11/website" target="_blank"><img src="https://opencollective.com/vuejs/tiers/gold-sponsors/11/avatar.svg"></a>
+<a href="https://opencollective.com/vuejs/tiers/gold-sponsors/12/website" target="_blank"><img src="https://opencollective.com/vuejs/tiers/gold-sponsors/12/avatar.svg"></a>
+<a href="https://opencollective.com/vuejs/tiers/gold-sponsors/13/website" target="_blank"><img src="https://opencollective.com/vuejs/tiers/gold-sponsors/13/avatar.svg"></a>
+<a href="https://opencollective.com/vuejs/tiers/gold-sponsors/14/website" target="_blank"><img src="https://opencollective.com/vuejs/tiers/gold-sponsors/14/avatar.svg"></a>
+<a href="https://opencollective.com/vuejs/tiers/gold-sponsors/15/website" target="_blank"><img src="https://opencollective.com/vuejs/tiers/gold-sponsors/15/avatar.svg"></a>
+<a href="https://opencollective.com/vuejs/tiers/gold-sponsors/16/website" target="_blank"><img src="https://opencollective.com/vuejs/tiers/gold-sponsors/16/avatar.svg"></a>
+<a href="https://opencollective.com/vuejs/tiers/gold-sponsors/17/website" target="_blank"><img src="https://opencollective.com/vuejs/tiers/gold-sponsors/17/avatar.svg"></a>
+<a href="https://opencollective.com/vuejs/tiers/gold-sponsors/18/website" target="_blank"><img src="https://opencollective.com/vuejs/tiers/gold-sponsors/18/avatar.svg"></a>
+<a href="https://opencollective.com/vuejs/tiers/gold-sponsors/19/website" target="_blank"><img src="https://opencollective.com/vuejs/tiers/gold-sponsors/19/avatar.svg"></a>
+<a href="https://opencollective.com/vuejs/tiers/gold-sponsors/20/website" target="_blank"><img src="https://opencollective.com/vuejs/tiers/gold-sponsors/20/avatar.svg"></a>
+<a href="https://opencollective.com/vuejs/tiers/gold-sponsors/21/website" target="_blank"><img src="https://opencollective.com/vuejs/tiers/gold-sponsors/21/avatar.svg"></a>
+<a href="https://opencollective.com/vuejs/tiers/gold-sponsors/22/website" target="_blank"><img src="https://opencollective.com/vuejs/tiers/gold-sponsors/22/avatar.svg"></a>
+<a href="https://opencollective.com/vuejs/tiers/gold-sponsors/23/website" target="_blank"><img src="https://opencollective.com/vuejs/tiers/gold-sponsors/23/avatar.svg"></a>
+<a href="https://opencollective.com/vuejs/tiers/gold-sponsors/24/website" target="_blank"><img src="https://opencollective.com/vuejs/tiers/gold-sponsors/24/avatar.svg"></a>
+<a href="https://opencollective.com/vuejs/tiers/gold-sponsors/25/website" target="_blank"><img src="https://opencollective.com/vuejs/tiers/gold-sponsors/25/avatar.svg"></a>
+<a href="https://opencollective.com/vuejs/tiers/gold-sponsors/26/website" target="_blank"><img src="https://opencollective.com/vuejs/tiers/gold-sponsors/26/avatar.svg"></a>
+<a href="https://opencollective.com/vuejs/tiers/gold-sponsors/27/website" target="_blank"><img src="https://opencollective.com/vuejs/tiers/gold-sponsors/27/avatar.svg"></a>
+<a href="https://opencollective.com/vuejs/tiers/gold-sponsors/28/website" target="_blank"><img src="https://opencollective.com/vuejs/tiers/gold-sponsors/28/avatar.svg"></a>
+<a href="https://opencollective.com/vuejs/tiers/gold-sponsors/29/website" target="_blank"><img src="https://opencollective.com/vuejs/tiers/gold-sponsors/29/avatar.svg"></a>
 
 <h2 align="center">Silver via Patreon</h2>
 
@@ -161,36 +170,36 @@ Funds donated via Patreon goes directly to support Evan You's full-time work on 
 
 <h2 align="center">Silver via OpenCollective</h2>
 
-<a href="https://opencollective.com/vuejs/tiers/silversponsors/0/website" target="_blank"><img src="https://opencollective.com/vuejs/tiers/silversponsors/0/avatar.svg"></a>
-<a href="https://opencollective.com/vuejs/tiers/silversponsors/1/website" target="_blank"><img src="https://opencollective.com/vuejs/tiers/silversponsors/1/avatar.svg"></a>
-<a href="https://opencollective.com/vuejs/tiers/silversponsors/2/website" target="_blank"><img src="https://opencollective.com/vuejs/tiers/silversponsors/2/avatar.svg"></a>
-<a href="https://opencollective.com/vuejs/tiers/silversponsors/3/website" target="_blank"><img src="https://opencollective.com/vuejs/tiers/silversponsors/3/avatar.svg"></a>
-<a href="https://opencollective.com/vuejs/tiers/silversponsors/4/website" target="_blank"><img src="https://opencollective.com/vuejs/tiers/silversponsors/4/avatar.svg"></a>
-<a href="https://opencollective.com/vuejs/tiers/silversponsors/5/website" target="_blank"><img src="https://opencollective.com/vuejs/tiers/silversponsors/5/avatar.svg"></a>
-<a href="https://opencollective.com/vuejs/tiers/silversponsors/6/website" target="_blank"><img src="https://opencollective.com/vuejs/tiers/silversponsors/6/avatar.svg"></a>
-<a href="https://opencollective.com/vuejs/tiers/silversponsors/7/website" target="_blank"><img src="https://opencollective.com/vuejs/tiers/silversponsors/7/avatar.svg"></a>
-<a href="https://opencollective.com/vuejs/tiers/silversponsors/8/website" target="_blank"><img src="https://opencollective.com/vuejs/tiers/silversponsors/8/avatar.svg"></a>
-<a href="https://opencollective.com/vuejs/tiers/silversponsors/9/website" target="_blank"><img src="https://opencollective.com/vuejs/tiers/silversponsors/9/avatar.svg"></a>
-<a href="https://opencollective.com/vuejs/tiers/silversponsors/10/website" target="_blank"><img src="https://opencollective.com/vuejs/tiers/silversponsors/10/avatar.svg"></a>
-<a href="https://opencollective.com/vuejs/tiers/silversponsors/11/website" target="_blank"><img src="https://opencollective.com/vuejs/tiers/silversponsors/11/avatar.svg"></a>
-<a href="https://opencollective.com/vuejs/tiers/silversponsors/12/website" target="_blank"><img src="https://opencollective.com/vuejs/tiers/silversponsors/12/avatar.svg"></a>
-<a href="https://opencollective.com/vuejs/tiers/silversponsors/13/website" target="_blank"><img src="https://opencollective.com/vuejs/tiers/silversponsors/13/avatar.svg"></a>
-<a href="https://opencollective.com/vuejs/tiers/silversponsors/14/website" target="_blank"><img src="https://opencollective.com/vuejs/tiers/silversponsors/14/avatar.svg"></a>
-<a href="https://opencollective.com/vuejs/tiers/silversponsors/15/website" target="_blank"><img src="https://opencollective.com/vuejs/tiers/silversponsors/15/avatar.svg"></a>
-<a href="https://opencollective.com/vuejs/tiers/silversponsors/16/website" target="_blank"><img src="https://opencollective.com/vuejs/tiers/silversponsors/16/avatar.svg"></a>
-<a href="https://opencollective.com/vuejs/tiers/silversponsors/17/website" target="_blank"><img src="https://opencollective.com/vuejs/tiers/silversponsors/17/avatar.svg"></a>
-<a href="https://opencollective.com/vuejs/tiers/silversponsors/18/website" target="_blank"><img src="https://opencollective.com/vuejs/tiers/silversponsors/18/avatar.svg"></a>
-<a href="https://opencollective.com/vuejs/tiers/silversponsors/19/website" target="_blank"><img src="https://opencollective.com/vuejs/tiers/silversponsors/19/avatar.svg"></a>
-<a href="https://opencollective.com/vuejs/tiers/silversponsors/20/website" target="_blank"><img src="https://opencollective.com/vuejs/tiers/silversponsors/20/avatar.svg"></a>
-<a href="https://opencollective.com/vuejs/tiers/silversponsors/21/website" target="_blank"><img src="https://opencollective.com/vuejs/tiers/silversponsors/21/avatar.svg"></a>
-<a href="https://opencollective.com/vuejs/tiers/silversponsors/22/website" target="_blank"><img src="https://opencollective.com/vuejs/tiers/silversponsors/22/avatar.svg"></a>
-<a href="https://opencollective.com/vuejs/tiers/silversponsors/23/website" target="_blank"><img src="https://opencollective.com/vuejs/tiers/silversponsors/23/avatar.svg"></a>
-<a href="https://opencollective.com/vuejs/tiers/silversponsors/24/website" target="_blank"><img src="https://opencollective.com/vuejs/tiers/silversponsors/24/avatar.svg"></a>
-<a href="https://opencollective.com/vuejs/tiers/silversponsors/25/website" target="_blank"><img src="https://opencollective.com/vuejs/tiers/silversponsors/25/avatar.svg"></a>
-<a href="https://opencollective.com/vuejs/tiers/silversponsors/26/website" target="_blank"><img src="https://opencollective.com/vuejs/tiers/silversponsors/26/avatar.svg"></a>
-<a href="https://opencollective.com/vuejs/tiers/silversponsors/27/website" target="_blank"><img src="https://opencollective.com/vuejs/tiers/silversponsors/27/avatar.svg"></a>
-<a href="https://opencollective.com/vuejs/tiers/silversponsors/28/website" target="_blank"><img src="https://opencollective.com/vuejs/tiers/silversponsors/28/avatar.svg"></a>
-<a href="https://opencollective.com/vuejs/tiers/silversponsors/29/website" target="_blank"><img src="https://opencollective.com/vuejs/tiers/silversponsors/29/avatar.svg"></a>
+<a href="https://opencollective.com/vuejs/tiers/silver-sponsors/0/website" target="_blank"><img src="https://opencollective.com/vuejs/tiers/silver-sponsors/0/avatar.svg"></a>
+<a href="https://opencollective.com/vuejs/tiers/silver-sponsors/1/website" target="_blank"><img src="https://opencollective.com/vuejs/tiers/silver-sponsors/1/avatar.svg"></a>
+<a href="https://opencollective.com/vuejs/tiers/silver-sponsors/2/website" target="_blank"><img src="https://opencollective.com/vuejs/tiers/silver-sponsors/2/avatar.svg"></a>
+<a href="https://opencollective.com/vuejs/tiers/silver-sponsors/3/website" target="_blank"><img src="https://opencollective.com/vuejs/tiers/silver-sponsors/3/avatar.svg"></a>
+<a href="https://opencollective.com/vuejs/tiers/silver-sponsors/4/website" target="_blank"><img src="https://opencollective.com/vuejs/tiers/silver-sponsors/4/avatar.svg"></a>
+<a href="https://opencollective.com/vuejs/tiers/silver-sponsors/5/website" target="_blank"><img src="https://opencollective.com/vuejs/tiers/silver-sponsors/5/avatar.svg"></a>
+<a href="https://opencollective.com/vuejs/tiers/silver-sponsors/6/website" target="_blank"><img src="https://opencollective.com/vuejs/tiers/silver-sponsors/6/avatar.svg"></a>
+<a href="https://opencollective.com/vuejs/tiers/silver-sponsors/7/website" target="_blank"><img src="https://opencollective.com/vuejs/tiers/silver-sponsors/7/avatar.svg"></a>
+<a href="https://opencollective.com/vuejs/tiers/silver-sponsors/8/website" target="_blank"><img src="https://opencollective.com/vuejs/tiers/silver-sponsors/8/avatar.svg"></a>
+<a href="https://opencollective.com/vuejs/tiers/silver-sponsors/9/website" target="_blank"><img src="https://opencollective.com/vuejs/tiers/silver-sponsors/9/avatar.svg"></a>
+<a href="https://opencollective.com/vuejs/tiers/silver-sponsors/10/website" target="_blank"><img src="https://opencollective.com/vuejs/tiers/silver-sponsors/10/avatar.svg"></a>
+<a href="https://opencollective.com/vuejs/tiers/silver-sponsors/11/website" target="_blank"><img src="https://opencollective.com/vuejs/tiers/silver-sponsors/11/avatar.svg"></a>
+<a href="https://opencollective.com/vuejs/tiers/silver-sponsors/12/website" target="_blank"><img src="https://opencollective.com/vuejs/tiers/silver-sponsors/12/avatar.svg"></a>
+<a href="https://opencollective.com/vuejs/tiers/silver-sponsors/13/website" target="_blank"><img src="https://opencollective.com/vuejs/tiers/silver-sponsors/13/avatar.svg"></a>
+<a href="https://opencollective.com/vuejs/tiers/silver-sponsors/14/website" target="_blank"><img src="https://opencollective.com/vuejs/tiers/silver-sponsors/14/avatar.svg"></a>
+<a href="https://opencollective.com/vuejs/tiers/silver-sponsors/15/website" target="_blank"><img src="https://opencollective.com/vuejs/tiers/silver-sponsors/15/avatar.svg"></a>
+<a href="https://opencollective.com/vuejs/tiers/silver-sponsors/16/website" target="_blank"><img src="https://opencollective.com/vuejs/tiers/silver-sponsors/16/avatar.svg"></a>
+<a href="https://opencollective.com/vuejs/tiers/silver-sponsors/17/website" target="_blank"><img src="https://opencollective.com/vuejs/tiers/silver-sponsors/17/avatar.svg"></a>
+<a href="https://opencollective.com/vuejs/tiers/silver-sponsors/18/website" target="_blank"><img src="https://opencollective.com/vuejs/tiers/silver-sponsors/18/avatar.svg"></a>
+<a href="https://opencollective.com/vuejs/tiers/silver-sponsors/19/website" target="_blank"><img src="https://opencollective.com/vuejs/tiers/silver-sponsors/19/avatar.svg"></a>
+<a href="https://opencollective.com/vuejs/tiers/silver-sponsors/20/website" target="_blank"><img src="https://opencollective.com/vuejs/tiers/silver-sponsors/20/avatar.svg"></a>
+<a href="https://opencollective.com/vuejs/tiers/silver-sponsors/21/website" target="_blank"><img src="https://opencollective.com/vuejs/tiers/silver-sponsors/21/avatar.svg"></a>
+<a href="https://opencollective.com/vuejs/tiers/silver-sponsors/22/website" target="_blank"><img src="https://opencollective.com/vuejs/tiers/silver-sponsors/22/avatar.svg"></a>
+<a href="https://opencollective.com/vuejs/tiers/silver-sponsors/23/website" target="_blank"><img src="https://opencollective.com/vuejs/tiers/silver-sponsors/23/avatar.svg"></a>
+<a href="https://opencollective.com/vuejs/tiers/silver-sponsors/24/website" target="_blank"><img src="https://opencollective.com/vuejs/tiers/silver-sponsors/24/avatar.svg"></a>
+<a href="https://opencollective.com/vuejs/tiers/silver-sponsors/25/website" target="_blank"><img src="https://opencollective.com/vuejs/tiers/silver-sponsors/25/avatar.svg"></a>
+<a href="https://opencollective.com/vuejs/tiers/silver-sponsors/26/website" target="_blank"><img src="https://opencollective.com/vuejs/tiers/silver-sponsors/26/avatar.svg"></a>
+<a href="https://opencollective.com/vuejs/tiers/silver-sponsors/27/website" target="_blank"><img src="https://opencollective.com/vuejs/tiers/silver-sponsors/27/avatar.svg"></a>
+<a href="https://opencollective.com/vuejs/tiers/silver-sponsors/28/website" target="_blank"><img src="https://opencollective.com/vuejs/tiers/silver-sponsors/28/avatar.svg"></a>
+<a href="https://opencollective.com/vuejs/tiers/silver-sponsors/29/website" target="_blank"><img src="https://opencollective.com/vuejs/tiers/silver-sponsors/29/avatar.svg"></a>
 
 <h2 align="center">Bronze via Patreon</h2>
 
@@ -241,248 +250,153 @@ Funds donated via Patreon goes directly to support Evan You's full-time work on 
 
 <h2 align="center">Bronze via OpenCollective</h2>
 
-<a href="https://opencollective.com/vuejs/tiers/bronzesponsors/0/website" target="_blank"><img src="https://opencollective.com/vuejs/tiers/bronzesponsors/0/avatar.svg"></a>
-<a href="https://opencollective.com/vuejs/tiers/bronzesponsors/1/website" target="_blank"><img src="https://opencollective.com/vuejs/tiers/bronzesponsors/1/avatar.svg"></a>
-<a href="https://opencollective.com/vuejs/tiers/bronzesponsors/2/website" target="_blank"><img src="https://opencollective.com/vuejs/tiers/bronzesponsors/2/avatar.svg"></a>
-<a href="https://opencollective.com/vuejs/tiers/bronzesponsors/3/website" target="_blank"><img src="https://opencollective.com/vuejs/tiers/bronzesponsors/3/avatar.svg"></a>
-<a href="https://opencollective.com/vuejs/tiers/bronzesponsors/4/website" target="_blank"><img src="https://opencollective.com/vuejs/tiers/bronzesponsors/4/avatar.svg"></a>
-<a href="https://opencollective.com/vuejs/tiers/bronzesponsors/5/website" target="_blank"><img src="https://opencollective.com/vuejs/tiers/bronzesponsors/5/avatar.svg"></a>
-<a href="https://opencollective.com/vuejs/tiers/bronzesponsors/6/website" target="_blank"><img src="https://opencollective.com/vuejs/tiers/bronzesponsors/6/avatar.svg"></a>
-<a href="https://opencollective.com/vuejs/tiers/bronzesponsors/7/website" target="_blank"><img src="https://opencollective.com/vuejs/tiers/bronzesponsors/7/avatar.svg"></a>
-<a href="https://opencollective.com/vuejs/tiers/bronzesponsors/8/website" target="_blank"><img src="https://opencollective.com/vuejs/tiers/bronzesponsors/8/avatar.svg"></a>
-<a href="https://opencollective.com/vuejs/tiers/bronzesponsors/9/website" target="_blank"><img src="https://opencollective.com/vuejs/tiers/bronzesponsors/9/avatar.svg"></a>
-<a href="https://opencollective.com/vuejs/tiers/bronzesponsors/10/website" target="_blank"><img src="https://opencollective.com/vuejs/tiers/bronzesponsors/10/avatar.svg"></a>
-<a href="https://opencollective.com/vuejs/tiers/bronzesponsors/11/website" target="_blank"><img src="https://opencollective.com/vuejs/tiers/bronzesponsors/11/avatar.svg"></a>
-<a href="https://opencollective.com/vuejs/tiers/bronzesponsors/12/website" target="_blank"><img src="https://opencollective.com/vuejs/tiers/bronzesponsors/12/avatar.svg"></a>
-<a href="https://opencollective.com/vuejs/tiers/bronzesponsors/13/website" target="_blank"><img src="https://opencollective.com/vuejs/tiers/bronzesponsors/13/avatar.svg"></a>
-<a href="https://opencollective.com/vuejs/tiers/bronzesponsors/14/website" target="_blank"><img src="https://opencollective.com/vuejs/tiers/bronzesponsors/14/avatar.svg"></a>
-<a href="https://opencollective.com/vuejs/tiers/bronzesponsors/15/website" target="_blank"><img src="https://opencollective.com/vuejs/tiers/bronzesponsors/15/avatar.svg"></a>
-<a href="https://opencollective.com/vuejs/tiers/bronzesponsors/16/website" target="_blank"><img src="https://opencollective.com/vuejs/tiers/bronzesponsors/16/avatar.svg"></a>
-<a href="https://opencollective.com/vuejs/tiers/bronzesponsors/17/website" target="_blank"><img src="https://opencollective.com/vuejs/tiers/bronzesponsors/17/avatar.svg"></a>
-<a href="https://opencollective.com/vuejs/tiers/bronzesponsors/18/website" target="_blank"><img src="https://opencollective.com/vuejs/tiers/bronzesponsors/18/avatar.svg"></a>
-<a href="https://opencollective.com/vuejs/tiers/bronzesponsors/19/website" target="_blank"><img src="https://opencollective.com/vuejs/tiers/bronzesponsors/19/avatar.svg"></a>
-<a href="https://opencollective.com/vuejs/tiers/bronzesponsors/20/website" target="_blank"><img src="https://opencollective.com/vuejs/tiers/bronzesponsors/20/avatar.svg"></a>
-<a href="https://opencollective.com/vuejs/tiers/bronzesponsors/21/website" target="_blank"><img src="https://opencollective.com/vuejs/tiers/bronzesponsors/21/avatar.svg"></a>
-<a href="https://opencollective.com/vuejs/tiers/bronzesponsors/22/website" target="_blank"><img src="https://opencollective.com/vuejs/tiers/bronzesponsors/22/avatar.svg"></a>
-<a href="https://opencollective.com/vuejs/tiers/bronzesponsors/23/website" target="_blank"><img src="https://opencollective.com/vuejs/tiers/bronzesponsors/23/avatar.svg"></a>
-<a href="https://opencollective.com/vuejs/tiers/bronzesponsors/24/website" target="_blank"><img src="https://opencollective.com/vuejs/tiers/bronzesponsors/24/avatar.svg"></a>
-<a href="https://opencollective.com/vuejs/tiers/bronzesponsors/25/website" target="_blank"><img src="https://opencollective.com/vuejs/tiers/bronzesponsors/25/avatar.svg"></a>
-<a href="https://opencollective.com/vuejs/tiers/bronzesponsors/26/website" target="_blank"><img src="https://opencollective.com/vuejs/tiers/bronzesponsors/26/avatar.svg"></a>
-<a href="https://opencollective.com/vuejs/tiers/bronzesponsors/27/website" target="_blank"><img src="https://opencollective.com/vuejs/tiers/bronzesponsors/27/avatar.svg"></a>
-<a href="https://opencollective.com/vuejs/tiers/bronzesponsors/28/website" target="_blank"><img src="https://opencollective.com/vuejs/tiers/bronzesponsors/28/avatar.svg"></a>
-<a href="https://opencollective.com/vuejs/tiers/bronzesponsors/29/website" target="_blank"><img src="https://opencollective.com/vuejs/tiers/bronzesponsors/29/avatar.svg"></a>
+<a href="https://opencollective.com/vuejs/tiers/bronze-sponsors/0/website" target="_blank"><img src="https://opencollective.com/vuejs/tiers/bronze-sponsors/0/avatar.svg"></a>
+<a href="https://opencollective.com/vuejs/tiers/bronze-sponsors/1/website" target="_blank"><img src="https://opencollective.com/vuejs/tiers/bronze-sponsors/1/avatar.svg"></a>
+<a href="https://opencollective.com/vuejs/tiers/bronze-sponsors/2/website" target="_blank"><img src="https://opencollective.com/vuejs/tiers/bronze-sponsors/2/avatar.svg"></a>
+<a href="https://opencollective.com/vuejs/tiers/bronze-sponsors/3/website" target="_blank"><img src="https://opencollective.com/vuejs/tiers/bronze-sponsors/3/avatar.svg"></a>
+<a href="https://opencollective.com/vuejs/tiers/bronze-sponsors/4/website" target="_blank"><img src="https://opencollective.com/vuejs/tiers/bronze-sponsors/4/avatar.svg"></a>
+<a href="https://opencollective.com/vuejs/tiers/bronze-sponsors/5/website" target="_blank"><img src="https://opencollective.com/vuejs/tiers/bronze-sponsors/5/avatar.svg"></a>
+<a href="https://opencollective.com/vuejs/tiers/bronze-sponsors/6/website" target="_blank"><img src="https://opencollective.com/vuejs/tiers/bronze-sponsors/6/avatar.svg"></a>
+<a href="https://opencollective.com/vuejs/tiers/bronze-sponsors/7/website" target="_blank"><img src="https://opencollective.com/vuejs/tiers/bronze-sponsors/7/avatar.svg"></a>
+<a href="https://opencollective.com/vuejs/tiers/bronze-sponsors/8/website" target="_blank"><img src="https://opencollective.com/vuejs/tiers/bronze-sponsors/8/avatar.svg"></a>
+<a href="https://opencollective.com/vuejs/tiers/bronze-sponsors/9/website" target="_blank"><img src="https://opencollective.com/vuejs/tiers/bronze-sponsors/9/avatar.svg"></a>
+<a href="https://opencollective.com/vuejs/tiers/bronze-sponsors/10/website" target="_blank"><img src="https://opencollective.com/vuejs/tiers/bronze-sponsors/10/avatar.svg"></a>
+<a href="https://opencollective.com/vuejs/tiers/bronze-sponsors/11/website" target="_blank"><img src="https://opencollective.com/vuejs/tiers/bronze-sponsors/11/avatar.svg"></a>
+<a href="https://opencollective.com/vuejs/tiers/bronze-sponsors/12/website" target="_blank"><img src="https://opencollective.com/vuejs/tiers/bronze-sponsors/12/avatar.svg"></a>
+<a href="https://opencollective.com/vuejs/tiers/bronze-sponsors/13/website" target="_blank"><img src="https://opencollective.com/vuejs/tiers/bronze-sponsors/13/avatar.svg"></a>
+<a href="https://opencollective.com/vuejs/tiers/bronze-sponsors/14/website" target="_blank"><img src="https://opencollective.com/vuejs/tiers/bronze-sponsors/14/avatar.svg"></a>
+<a href="https://opencollective.com/vuejs/tiers/bronze-sponsors/15/website" target="_blank"><img src="https://opencollective.com/vuejs/tiers/bronze-sponsors/15/avatar.svg"></a>
+<a href="https://opencollective.com/vuejs/tiers/bronze-sponsors/16/website" target="_blank"><img src="https://opencollective.com/vuejs/tiers/bronze-sponsors/16/avatar.svg"></a>
+<a href="https://opencollective.com/vuejs/tiers/bronze-sponsors/17/website" target="_blank"><img src="https://opencollective.com/vuejs/tiers/bronze-sponsors/17/avatar.svg"></a>
+<a href="https://opencollective.com/vuejs/tiers/bronze-sponsors/18/website" target="_blank"><img src="https://opencollective.com/vuejs/tiers/bronze-sponsors/18/avatar.svg"></a>
+<a href="https://opencollective.com/vuejs/tiers/bronze-sponsors/19/website" target="_blank"><img src="https://opencollective.com/vuejs/tiers/bronze-sponsors/19/avatar.svg"></a>
+<a href="https://opencollective.com/vuejs/tiers/bronze-sponsors/20/website" target="_blank"><img src="https://opencollective.com/vuejs/tiers/bronze-sponsors/20/avatar.svg"></a>
+<a href="https://opencollective.com/vuejs/tiers/bronze-sponsors/21/website" target="_blank"><img src="https://opencollective.com/vuejs/tiers/bronze-sponsors/21/avatar.svg"></a>
+<a href="https://opencollective.com/vuejs/tiers/bronze-sponsors/22/website" target="_blank"><img src="https://opencollective.com/vuejs/tiers/bronze-sponsors/22/avatar.svg"></a>
+<a href="https://opencollective.com/vuejs/tiers/bronze-sponsors/23/website" target="_blank"><img src="https://opencollective.com/vuejs/tiers/bronze-sponsors/23/avatar.svg"></a>
+<a href="https://opencollective.com/vuejs/tiers/bronze-sponsors/24/website" target="_blank"><img src="https://opencollective.com/vuejs/tiers/bronze-sponsors/24/avatar.svg"></a>
+<a href="https://opencollective.com/vuejs/tiers/bronze-sponsors/25/website" target="_blank"><img src="https://opencollective.com/vuejs/tiers/bronze-sponsors/25/avatar.svg"></a>
+<a href="https://opencollective.com/vuejs/tiers/bronze-sponsors/26/website" target="_blank"><img src="https://opencollective.com/vuejs/tiers/bronze-sponsors/26/avatar.svg"></a>
+<a href="https://opencollective.com/vuejs/tiers/bronze-sponsors/27/website" target="_blank"><img src="https://opencollective.com/vuejs/tiers/bronze-sponsors/27/avatar.svg"></a>
+<a href="https://opencollective.com/vuejs/tiers/bronze-sponsors/28/website" target="_blank"><img src="https://opencollective.com/vuejs/tiers/bronze-sponsors/28/avatar.svg"></a>
+<a href="https://opencollective.com/vuejs/tiers/bronze-sponsors/29/website" target="_blank"><img src="https://opencollective.com/vuejs/tiers/bronze-sponsors/29/avatar.svg"></a>
 
 <h2 align="center">Generous Backers via Patreon ($50+)</h2>
 
-- No Divide Studio
-- James Kyle
-- Blake Newman
-- Lee Smith
-- Adam Dorsey
-- Greg McCarvell
-- Yoshiya Hinosawa
+<!--50 start-->
 - Wasim Khamlichi
 - errorrik
 - Alex Balashov
 - Konstantin Levinski
 - Samuel Smith
-- Harri J Salomaa
+- HARRI J SALOMAA
+- tjkoury
+<!--50 end-->
 
 <h2 align="center">Backers via Patreon</h2>
 
-- Sylvain Pollet-Villard
+<!--10 start-->
 - Luca Borghini
-- Kazuya Kawaguchi
-- Keisuke Kita
-- Anirudh Sanjeev
-- Guido Bertolino
-- Fábio Vedovelli
+- kazuya kawaguchi
+- Keisuke KITA
+- Fabio Vedovelli
 - Jack Barham
-- Stephane Demoote
-- Paul R. Dillinger
-- Sean Washington
-- Alun Davey
-- Eduardo Kyvenko
-- Thijs de Maa
-- Joris Noordermeer
-- Niklas Lifors
-- An Phan
-- Richard Wyke
-- Roman Kuba
+- Santa Cruz
 - Tom Conlon
-- Matt Pickle
 - Simon East
-- Bill Columbia
-- Hayden Bickerton
 - Henry Zhu
-- John Smith
 - Benjamin Listwon
-- Rainer Morgan
-- Brian Jorden
-- Christopher Dosin
 - Lars Andreas Ness
-- Drew Lustro
 - Victor Tolbert
-- Jon Pokrzyk
-- Frank Dungan III
-- Lanes.io
-- Anders
-- Dexter Miguel
-- Stephen Michael Hartley
+- Frank Dugan III
+- Stephen Hartley
 - Wen-Tien Chang
-- Ole Støvern
-- Valerian Cure
-- Dani Ilops
-- louisbl
-- Yegor Sytnyk
-- Guido H.
-- Joan Cejudo
-- Ian Walter
+- Chestnut Hill
 - Nikola Trifunovic
-- Nicolas Mutis Mesa
-- Fahed Toumi
-- James Brooks
 - Kirk Lewis
-- Spenser
-- Takuya Nishio
-- Daniel Diekmeier
-- Peter Thaleikis
-- Karol Fabjanczuk
-- Eduardo
-- Lê Chương
-- Webber Wang
-- Daniel Schmitz
-- Bruce Li
-- Mohammed
-- Sam Wainwright
-- TJ Hillard
-- Kyle Arrington
-- Jason Land
+- Karol F
 - Miljan Aleksic
-- James Ye
-- Laurids Duellmann
-- Christo Crampton
-- Adon Metcalfe
+- 叶解
 - Paul Straw
 - Jake Ingman
-- Eduardo Camillo
 - Barbara Liau
-- Jens Lind
-- Yegor Sytnyk
-- Benson Wong
-- Anthony Tsui
-- Karol Fabjanczuk
 - Isaac Sant
 - Milos Stojanovic
-- Matsumoto Takamasa
-- Douglas Lowder
-- Bess Brooks
+- 4
+- The Graphic Design School
 - Christian Griffith
-- Matt Rockwell
 - Jarek Tkaczyk
-- Michael Laccetti
-- Jonothan Allen
 - Andrew Davis
-- Jason Rys
-- Sean
-- Xiaojie Li
-- Joakim Bugge
-- Lacey Pevey
+- Sean MacIsaac
+- Xiaojie LI
 - David Hess
 - Niannian Modisette
-- Kim Cuartero
-- Luke Sampson
 - Dariusz Jastrzębski
-- Ivan Sieder
-- Jivan Roquet
-- Shane
-- Stew Heckenberg
 - Matt Jones
 - Dave Chenell
 - Frank Baele
-- Jack McDade
-- Patrick O'Dacre
-- Wietse Wind
-- Donny Donny
-- Duncan Kenzie
+- Cheng-Wei Chien
+- Duncan J Kenzie
 - Mike Margerum
-- Michael Richards
-- Eduardo Reveles
-- Jan Kremlacek
 - Guy Gavergun
-- Keith Bailey
-- Joel Birch
-- Bernhard E. Reiter
-- Radu Cretu
-- Luiz Tanure
-- Poamrong Rith
+- Edithvale
+- Intevation GmbH
+- Luiz Eduardo  Tanure Bacelar
 - Chengzhi Yin
 - Dan Barrett
 - Zoran Knezevic
-- Charles Beaumont
-- Jonathan Kent
 - James Simpson
-- Pascal Germain
 - Pierre Vanhulst
 - Vincent Gabriel
-- Kyovo Digaw
-- devneko
-- Cheng-Wei Chien
-- Michael Mazurczak
-- Daniel
+- Shinji Yamada
 - Chris Anderson
 - Jon Hobbs-Smith
 - Chez Tschetter
 - Akiho Nagao
-- Alexander Karelas
 - Asaf Yishai
-- Diana Espino
 - Alexandre Madurell
-- alxs
-- Anthony Estebe
+- Estebe Anthony
 - Haim Yulzari
-- Blake Campbell
 - David McGuigan
-- Niklas Wallentin
 - Jeremy Tan
 - Jim Raden
 - Luka Savic
-- IMGNRY
-- Pascal Germain
-- Raphaël Saunier
-- Kirk Lewis
+- Fille Åström
 - Nicholas Reid
-- Tyler
-- Yong Jun Thong
-- Jonatan Machado
-- Tai Shi Ling
+- Tyler Scott
+- Thong Yong Jun
+- Tai Shi Lgin
 - Bryan Gruneberg
+- Roman Kuba
 - Matthew McMillion
-- Keith Mancuso
-- Alexander Karelas
+- Familiar Studio
 - Matias Verdier
 - Jamie McElwain
 - Travis Gertz
-- Ale Mohamad
-- Jonas Galvez
-- William Correa
-- Raphael Belvederese
+- Vivekanandhan Natarajan
+- Alejandro Mohamad
+- Rafael Belvederese
 - Mickaël Andrieu
 - Guilherme S L de Souza
 - Rob Yedlin
 - Daniel Waghorn
-- Eric Githinji
-- Vivekanandhan Natarajan
-- Chih-Hsuan Fan
+- Chih-Hsuan, Fan
 - Jordan Oroshiba
 - Brian Jorden
 - Cliff Hess
-- Joe Gregory
+- Joe Ray Gregory
 - Johnny Eshan
-- Alexander Karelas
 - Kamil Ocean
-- Orney Enrique Martinez Said
+- Orney Enrique martinez Said
 - Tom Striker
+- Oskar Lindgren
+- RADD Creative
+- Maegan Wilson
+- Rua Cura D'ars
+- Richard Simpson
+- Charles McKeever
+- Alok Pant
+<!--10 end-->
 
 <h2 align="center">Backers via OpenCollective</h2>
 
