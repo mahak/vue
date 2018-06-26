@@ -91,11 +91,6 @@ Funds donated via Patreon go directly to support Evan You's full-time work on Vu
         </a>
       </td>
       <td align="center" valign="middle">
-        <a href="https://anymod.com" target="_blank">
-          <img width="148px" src="https://raw.githubusercontent.com/vuejs/vuejs.org/master/themes/vue/source/images/anymod.png">
-        </a>
-      </td>
-      <td align="center" valign="middle">
         <a href="https://www.frontenddeveloperlove.com/" target="_blank">
           <img width="148px" src="https://raw.githubusercontent.com/vuejs/vuejs.org/master/themes/vue/source/images/frontend-love.png">
         </a>
@@ -105,13 +100,13 @@ Funds donated via Patreon go directly to support Evan You's full-time work on Vu
           <img width="148px" src="https://raw.githubusercontent.com/vuejs/vuejs.org/master/themes/vue/source/images/onsen-ui.png">
         </a>
       </td>
-    </tr><tr></tr>
-    <tr>
       <td align="center" valign="middle">
         <a href="https://vuetifyjs.com" target="_blank">
           <img width="148px" src="https://raw.githubusercontent.com/vuejs/vuejs.org/master/themes/vue/source/images/vuetify.png">
         </a>
       </td>
+    </tr><tr></tr>
+    <tr>
       <td align="center" valign="middle">
         <a href="https://neds.com.au/" target="_blank">
           <img width="148px" src="https://raw.githubusercontent.com/vuejs/vuejs.org/master/themes/vue/source/images/neds.png">
@@ -133,13 +128,6 @@ Funds donated via Patreon go directly to support Evan You's full-time work on Vu
         </a>
       </td>
       <td align="center" valign="middle">
-        <a href="https://leanpub.com/vuejs2" target="_blank">
-          <img width="148px" src="https://raw.githubusercontent.com/vuejs/vuejs.org/master/themes/vue/source/images/tmvuejs2.png">
-        </a>
-      </td>
-    </tr><tr></tr>
-    <tr>
-      <td align="center" valign="middle">
         <a href="https://codepilot.ai" target="_blank">
           <img width="148px" src="https://raw.githubusercontent.com/vuejs/vuejs.org/master/themes/vue/source/images/codepilot.png">
         </a>
@@ -149,11 +137,8 @@ Funds donated via Patreon go directly to support Evan You's full-time work on Vu
           <img width="148px" src="https://raw.githubusercontent.com/vuejs/vuejs.org/master/themes/vue/source/images/teamextension.png">
         </a>
       </td>
-      <td align="center" valign="middle">
-        <a href="https://jsguru.io/" target="_blank">
-          <img width="148px" src="https://raw.githubusercontent.com/vuejs/vuejs.org/master/themes/vue/source/images/jsguru.png">
-        </a>
-      </td>
+    </tr><tr></tr>
+    <tr>
       <td align="center" valign="middle">
         <a href="http://aaha.co/" target="_blank">
           <img width="148px" src="https://raw.githubusercontent.com/vuejs/vuejs.org/master/themes/vue/source/images/aaha.png">
@@ -169,11 +154,9 @@ Funds donated via Patreon go directly to support Evan You's full-time work on Vu
           <img width="148px" src="https://raw.githubusercontent.com/vuejs/vuejs.org/master/themes/vue/source/images/nsoft.png">
         </a>
       </td>
-    </tr><tr></tr>
-    <tr>
       <td align="center" valign="middle">
-        <a href="https://www.pubnub.com/vue-js/" target="_blank">
-          <img width="148px" src="https://raw.githubusercontent.com/vuejs/vuejs.org/master/themes/vue/source/images/pubnub.png">
+        <a href="https://www.vuemastery.com/" target="_blank">
+          <img width="148px" src="https://raw.githubusercontent.com/vuejs/vuejs.org/master/themes/vue/source/images/vuemastery.png">
         </a>
       </td>
     </tr><tr></tr>
@@ -198,6 +181,20 @@ Funds donated via Patreon go directly to support Evan You's full-time work on Vu
 <h2 align="center">Silver via Patreon</h2>
 
 - Matt Mullenweg
+
+<!--silver start-->
+<table>
+  <tbody>
+    <tr>
+      <td align="center" valign="middle">
+        <a href="https://dopamine.bg/" target="_blank">
+          <img width="148px" src="https://raw.githubusercontent.com/vuejs/vuejs.org/master/themes/vue/source/images/dopamine.png">
+        </a>
+      </td>
+    </tr><tr></tr>
+  </tbody>
+</table>
+<!--silver end-->
 
 <h2 align="center">Bronze via Patreon</h2>
 
@@ -270,9 +267,10 @@ Funds donated via Patreon go directly to support Evan You's full-time work on Vu
 - errorrik 
 - Alex Balashov
 - Konstantin Levinski
-- Samuel Smith
 - tjkoury 
 - Evan Leonardi
+- Ernest Sim
+- Blaise Laflamme
 <!--50 end-->
 
 <h2 align="center">Backers via Patreon</h2>
@@ -288,7 +286,6 @@ Funds donated via Patreon go directly to support Evan You's full-time work on Vu
 - Benjamin Listwon
 - Lars Andreas Ness
 - Victor Tolbert
-- Frank Dugan III
 - Stephen Hartley
 - Wen-Tien Chang
 - Kirk Lewis
@@ -298,7 +295,6 @@ Funds donated via Patreon go directly to support Evan You's full-time work on Vu
 - Paul Straw
 - Jake Ingman
 - Barbara Liau
-- Milos Stojanovic
 - 4 
 - The Graphic Design School
 - Christian Griffith
@@ -309,6 +305,7 @@ Funds donated via Patreon go directly to support Evan You's full-time work on Vu
 - David Hess
 - Niannian Modisette
 - Dariusz Jastrzębski
+- Ivan Sieder
 - Matt Jones
 - Dave Chenell
 - Duncan J Kenzie
@@ -317,30 +314,25 @@ Funds donated via Patreon go directly to support Evan You's full-time work on Vu
 - Edithvale 
 - Intevation GmbH
 - Luiz Eduardo  Tanure Bacelar
-- Chengzhi Yin
 - Zoran Knezevic
-- John Bergloff
 - James Simpson
 - Pascal Germain
 - Pierre Vanhulst
-- Vincent Gabriel
-- Chris Anderson
 - Jon Hobbs-Smith
 - Akiho Nagao
 - Asaf Yishai
 - Estebe Anthony
 - Haim Yulzari
-- David McGuigan
 - Jeremy Tan
 - Jim Raden
 - Fille Åström
 - Nicholas Reid
+- Samuel Smith
 - Tyler Scott
 - Thong Yong Jun
 - Tai Shi Lgin
 - Bryan Gruneberg
 - Roman Kuba
-- Familiar Studio
 - Matias Verdier
 - Jamie McElwain
 - Vivekanandhan Natarajan
@@ -355,27 +347,37 @@ Funds donated via Patreon go directly to support Evan You's full-time work on Vu
 - Brian Jorden
 - Cliff Hess
 - Joe Ray Gregory
-- Orney Enrique martinez Said
-- Tom Striker
 - Oskar Lindgren
 - RADD Creative
 - Rua Cura D'ars
 - Richard Simpson
 - Charles McKeever
 - Alok Pant
+- Sandro Das Neves
 - Jessie Hernandez
 - Eric Fong
 - Aparajita Fishman
-- Cheyenne Arrowsmith
 - Romain Lienard
 - Bohdan Kokotko
-- François Forest
 - Donald Fischer
 - Alexander Weiher
 - Daniel Cook
 - Shinya Katayama
 - Brendan Long
 - Jere Sjöroos
+- Wakana Seki
+- David Ang
+- David Rowthorn
+- Dom 
+- Ben Hong
+- David Kaplan
+- John Cleveland
+- Jaeyoung Lee
+- Amor 
+- Tom Ootes
+- Andy Foster
+- Blake Campbell
+- David Nunn
 <!--10 end-->
 
 <h2 align="center">Backers via OpenCollective</h2>
