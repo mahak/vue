@@ -54,25 +54,25 @@ describe('codegen', () => {
   it('generate v-for directive', () => {
     assertCodegen(
       '<div><li v-for="item in items" :key="item.uid"></li></div>',
-      `with(this){return _c('div',_l((items),function(item){return _c('li',{key:item.uid})}))}`
+      `with(this){return _c('div',_l((items),function(item){return _c('li',{key:item.uid})}),0)}`
     )
     // iterator syntax
     assertCodegen(
       '<div><li v-for="(item, i) in items"></li></div>',
-      `with(this){return _c('div',_l((items),function(item,i){return _c('li')}))}`
+      `with(this){return _c('div',_l((items),function(item,i){return _c('li')}),0)}`
     )
     assertCodegen(
       '<div><li v-for="(item, key, index) in items"></li></div>',
-      `with(this){return _c('div',_l((items),function(item,key,index){return _c('li')}))}`
+      `with(this){return _c('div',_l((items),function(item,key,index){return _c('li')}),0)}`
     )
     // destructuring
     assertCodegen(
       '<div><li v-for="{ a, b } in items"></li></div>',
-      `with(this){return _c('div',_l((items),function({ a, b }){return _c('li')}))}`
+      `with(this){return _c('div',_l((items),function({ a, b }){return _c('li')}),0)}`
     )
     assertCodegen(
       '<div><li v-for="({ a, b }, key, index) in items"></li></div>',
-      `with(this){return _c('div',_l((items),function({ a, b },key,index){return _c('li')}))}`
+      `with(this){return _c('div',_l((items),function({ a, b },key,index){return _c('li')}),0)}`
     )
     // v-for with extra element
     assertCodegen(
@@ -126,7 +126,7 @@ describe('codegen', () => {
   it('generate ref on v-for', () => {
     assertCodegen(
       '<ul><li v-for="item in items" ref="component1"></li></ul>',
-      `with(this){return _c('ul',_l((items),function(item){return _c('li',{ref:"component1",refInFor:true})}))}`
+      `with(this){return _c('ul',_l((items),function(item){return _c('li',{ref:"component1",refInFor:true})}),0)}`
     )
   })
 
@@ -148,6 +148,27 @@ describe('codegen', () => {
     assertCodegen(
       '<p v-bind.sync="test"></p>',
       `with(this){return _c('p',_b({},'p',test,false,true))}`
+    )
+  })
+
+  it('generate v-model directive', () => {
+    assertCodegen(
+      '<input v-model="test">',
+      `with(this){return _c('input',{directives:[{name:"model",rawName:"v-model",value:(test),expression:"test"}],domProps:{"value":(test)},on:{"input":function($event){if($event.target.composing)return;test=$event.target.value}}})}`
+    )
+  })
+
+  it('generate multiline v-model directive', () => {
+    assertCodegen(
+      '<input v-model="\n test \n">',
+      `with(this){return _c('input',{directives:[{name:"model",rawName:"v-model",value:(\n test \n),expression:"\\n test \\n"}],domProps:{"value":(\n test \n)},on:{"input":function($event){if($event.target.composing)return;\n test \n=$event.target.value}}})}`
+    )
+  })
+
+  it('generate multiline v-model directive on custom component', () => {
+    assertCodegen(
+      '<my-component v-model="\n test \n" />',
+      `with(this){return _c('my-component',{model:{value:(\n test \n),callback:function ($$v) {\n test \n=$$v},expression:"\\n test \\n"}})}`
     )
   })
 
@@ -576,7 +597,7 @@ describe('codegen', () => {
   it('generate static trees inside v-for', () => {
     assertCodegen(
       `<div><div v-for="i in 10"><p><span></span></p></div></div>`,
-      `with(this){return _c('div',_l((10),function(i){return _c('div',[_m(0,true)])}))}`,
+      `with(this){return _c('div',_l((10),function(i){return _c('div',[_m(0,true)])}),0)}`,
       [`with(this){return _c('p',[_c('span')])}`]
     )
   })
