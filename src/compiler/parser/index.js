@@ -17,7 +17,8 @@ import {
   getBindingAttr,
   getAndRemoveAttr,
   getRawBindingAttr,
-  pluckModuleFunction
+  pluckModuleFunction,
+  getAndRemoveAttrByRegex
 } from '../helpers'
 
 export const onRE = /^@|^v-on:/
@@ -30,6 +31,8 @@ const argRE = /:(.*)$/
 export const bindRE = /^:|^\.|^v-bind:/
 const propBindRE = /^\./
 const modifierRE = /\.[^.]+/g
+
+const scopedSlotShorthandRE = /^:?\(.*\)$/
 
 const lineBreakRE = /[\r\n]/
 const whitespaceRE = /\s+/g
@@ -565,12 +568,25 @@ function processSlotContent (el) {
     }
     el.slotScope = (
       slotScope ||
-      getAndRemoveAttr(el, 'slot-scope') ||
+      getAndRemoveAttr(el, 'slot-scope')
+    )
+    if (process.env.NEW_SLOT_SYNTAX) {
       // new in 2.6: slot-props and its shorthand works the same as slot-scope
       // when used on <template> containers
-      getAndRemoveAttr(el, 'slot-props') ||
-      getAndRemoveAttr(el, '()')
-    )
+      el.slotScope = el.slotScope || getAndRemoveAttr(el, 'slot-props')
+      // 2.6 shorthand syntax
+      const shorthand = getAndRemoveAttrByRegex(el, scopedSlotShorthandRE)
+      if (shorthand) {
+        if (process.env.NODE_ENV !== 'production' && el.slotScope) {
+          warn(
+            `Unexpected mixed usage of different slot syntaxes.`,
+            el
+          )
+        }
+        el.slotTarget = getScopedSlotShorthandName(shorthand)
+        el.slotScope = shorthand.value
+      }
+    }
   } else if ((slotScope = getAndRemoveAttr(el, 'slot-scope'))) {
     /* istanbul ignore if */
     if (process.env.NODE_ENV !== 'production' && el.attrsMap['v-for']) {
@@ -583,21 +599,31 @@ function processSlotContent (el) {
       )
     }
     el.slotScope = slotScope
-  } else {
+  } else if (process.env.NEW_SLOT_SYNTAX) {
     // 2.6: slot-props on component, denotes default slot
-    slotScope = getAndRemoveAttr(el, 'slot-props') || getAndRemoveAttr(el, '()')
-    if (slotScope) {
-      if (process.env.NODE_ENV !== 'production' && !maybeComponent(el)) {
-        warn(
-          `slot-props cannot be used on non-component elements.`,
-          el.rawAttrsMap['slot-props'] || el.rawAttrsMap['()']
-        )
+    slotScope = getAndRemoveAttr(el, 'slot-props')
+    const shorthand = getAndRemoveAttrByRegex(el, scopedSlotShorthandRE)
+    if (slotScope || shorthand) {
+      if (process.env.NODE_ENV !== 'production') {
+        if (!maybeComponent(el)) {
+          warn(
+            `slot-props cannot be used on non-component elements.`,
+            el.rawAttrsMap['slot-props'] || el.rawAttrsMap['()']
+          )
+        }
+        if (slotScope && shorthand) {
+          warn(
+            `Unexpected mixed usage of different slot syntaxes.`,
+            el
+          )
+        }
       }
       // add the component's children to its default slot
       const slots = el.scopedSlots || (el.scopedSlots = {})
-      const slotContainer = slots[`"default"`] = createASTElement('template', [], el)
+      const target = shorthand ? getScopedSlotShorthandName(shorthand) : `"default"`
+      const slotContainer = slots[target] = createASTElement('template', [], el)
       slotContainer.children = el.children
-      slotContainer.slotScope = slotScope
+      slotContainer.slotScope = shorthand ? shorthand.value : slotScope
       // remove children as they are returned from scopedSlots now
       el.children = []
       // mark el non-plain so data gets generated
@@ -615,6 +641,14 @@ function processSlotContent (el) {
       addAttr(el, 'slot', slotTarget, getRawBindingAttr(el, 'slot'))
     }
   }
+}
+
+function getScopedSlotShorthandName ({ name }) {
+  return name.charAt(0) === ':'
+    // dynamic :(name)
+    ? name.slice(2, -1) || `"default"`
+    // static (name)
+    : `"${name.slice(1, -1) || `default`}"`
 }
 
 // handle <slot/> outlets
