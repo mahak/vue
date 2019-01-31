@@ -360,46 +360,33 @@ function genScopedSlots (
   slots: { [key: string]: ASTElement },
   state: CodegenState
 ): string {
-  const hasDynamicKeys = Object.keys(slots).some(key => slots[key].slotTargetDynamic)
+  const hasDynamicKeys = Object.keys(slots).some(key => {
+    const slot = slots[key]
+    return slot.slotTargetDynamic || slot.if || slot.for
+  })
   return `scopedSlots:_u([${
     Object.keys(slots).map(key => {
-      return genScopedSlot(key, slots[key], state)
+      return genScopedSlot(slots[key], state)
     }).join(',')
   }]${hasDynamicKeys ? `,true` : ``})`
 }
 
 function genScopedSlot (
-  key: string,
   el: ASTElement,
   state: CodegenState
 ): string {
+  if (el.if && !el.ifProcessed) {
+    return genIf(el, state, genScopedSlot, `null`)
+  }
   if (el.for && !el.forProcessed) {
-    return genForScopedSlot(key, el, state)
+    return genFor(el, state, genScopedSlot)
   }
   const fn = `function(${String(el.slotScope)}){` +
     `return ${el.tag === 'template'
-      ? el.if
-        ? `(${el.if})?${genChildren(el, state) || 'undefined'}:undefined`
-        : genChildren(el, state) || 'undefined'
+      ? genChildren(el, state) || 'undefined'
       : genElement(el, state)
     }}`
-  return `{key:${key},fn:${fn}}`
-}
-
-function genForScopedSlot (
-  key: string,
-  el: any,
-  state: CodegenState
-): string {
-  const exp = el.for
-  const alias = el.alias
-  const iterator1 = el.iterator1 ? `,${el.iterator1}` : ''
-  const iterator2 = el.iterator2 ? `,${el.iterator2}` : ''
-  el.forProcessed = true // avoid recursion
-  return `_l((${exp}),` +
-    `function(${alias}${iterator1}${iterator2}){` +
-      `return ${genScopedSlot(key, el, state)}` +
-    '})'
+  return `{key:${el.slotTarget || `"default"`},fn:${fn}}`
 }
 
 export function genChildren (
