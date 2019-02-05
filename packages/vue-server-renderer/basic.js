@@ -1998,7 +1998,7 @@
     var res;
     try {
       res = args ? handler.apply(context, args) : handler.call(context);
-      if (isPromise(res)) {
+      if (res && !res._isVue && isPromise(res)) {
         res.catch(function (e) { return handleError(e, vm, info + " (Promise/async)"); });
       }
     } catch (e) {
@@ -3376,10 +3376,11 @@
     '&quot;': '"',
     '&amp;': '&',
     '&#10;': '\n',
-    '&#9;': '\t'
+    '&#9;': '\t',
+    '&#39;': "'"
   };
-  var encodedAttr = /&(?:lt|gt|quot|amp);/g;
-  var encodedAttrWithNewLines = /&(?:lt|gt|quot|amp|#10|#9);/g;
+  var encodedAttr = /&(?:lt|gt|quot|amp|#39);/g;
+  var encodedAttrWithNewLines = /&(?:lt|gt|quot|amp|#39|#10|#9);/g;
 
   // #5992
   var isIgnoreNewlineTag = makeMap('pre,textarea', true);
@@ -4146,16 +4147,20 @@
         }
       },
       comment: function comment (text, start, end) {
-        var child = {
-          type: 3,
-          text: text,
-          isComment: true
-        };
-        if (options.outputSourceRange) {
-          child.start = start;
-          child.end = end;
+        // adding anyting as a sibling to the root node is forbidden
+        // comments should still be allowed, but ignored
+        if (currentParent) {
+          var child = {
+            type: 3,
+            text: text,
+            isComment: true
+          };
+          if (options.outputSourceRange) {
+            child.start = start;
+            child.end = end;
+          }
+          currentParent.children.push(child);
         }
-        currentParent.children.push(child);
       }
     });
     return root
@@ -5489,7 +5494,7 @@
         { start: el.start }
       );
     }
-    if (ast.type === 1) {
+    if (ast && ast.type === 1) {
       var inlineRenderFns = generate(ast, state.options);
       return ("inlineTemplate:{render:function(){" + (inlineRenderFns.render) + "},staticRenderFns:[" + (inlineRenderFns.staticRenderFns.map(function (code) { return ("function(){" + code + "}"); }).join(',')) + "]}")
     }
@@ -5512,7 +5517,8 @@
     el,
     state
   ) {
-    if (el.if && !el.ifProcessed) {
+    var isLegacySyntax = el.attrsMap['slot-scope'];
+    if (el.if && !el.ifProcessed && !isLegacySyntax) {
       return genIf(el, state, genScopedSlot, "null")
     }
     if (el.for && !el.forProcessed) {
@@ -5520,7 +5526,9 @@
     }
     var fn = "function(" + (String(el.slotScope)) + "){" +
       "return " + (el.tag === 'template'
-        ? genChildren(el, state) || 'undefined'
+        ? el.if && isLegacySyntax
+          ? ("(" + (el.if) + ")?" + (genChildren(el, state) || 'undefined') + ":undefined")
+          : genChildren(el, state) || 'undefined'
         : genElement(el, state)) + "}";
     return ("{key:" + (el.slotTarget || "\"default\"") + ",fn:" + fn + "}")
   }
@@ -7790,7 +7798,7 @@
       res = {};
       for (var key in slots) {
         if (slots[key] && key[0] !== '$') {
-          res[key] = normalizeScopedSlot(slots[key]);
+          res[key] = normalizeScopedSlot(normalSlots, key, slots[key]);
         }
       }
     }
@@ -7805,13 +7813,22 @@
     return res
   }
 
-  function normalizeScopedSlot(fn) {
-    return function (scope) {
+  function normalizeScopedSlot(normalSlots, key, fn) {
+    var normalized = function (scope) {
+      if ( scope === void 0 ) scope = {};
+
       var res = fn(scope);
       return res && typeof res === 'object' && !Array.isArray(res)
         ? [res] // single vnode
         : normalizeChildren(res)
+    };
+    // proxy scoped slots on normal $slots
+    if (!hasOwn(normalSlots, key)) {
+      Object.defineProperty(normalSlots, key, {
+        get: normalized
+      });
     }
+    return normalized
   }
 
   function proxyNormalSlot(slots, key) {
@@ -8247,7 +8264,7 @@
   function transformModel (options, data) {
     var prop = (options.model && options.model.prop) || 'value';
     var event = (options.model && options.model.event) || 'input'
-    ;(data.props || (data.props = {}))[prop] = data.model.value;
+    ;(data.attrs || (data.attrs = {}))[prop] = data.model.value;
     var on = data.on || (data.on = {});
     var existing = on[event];
     var callback = data.model.callback;
