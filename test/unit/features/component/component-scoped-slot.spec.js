@@ -456,7 +456,7 @@ describe('Component scoped slot', () => {
   })
 
   // new in 2.6, unifying all slots as functions
-  it('non-scoped slots should also be available on this.$scopedSlots', () => {
+  it('non-scoped slots should also be available on $scopedSlots', () => {
     const vm = new Vue({
       template: `<foo>before <div slot="bar" slot-scope="scope">{{ scope.msg }}</div> after</foo>`,
       components: {
@@ -471,24 +471,6 @@ describe('Component scoped slot', () => {
       }
     }).$mount()
     expect(vm.$el.innerHTML).toBe(`before  after<div>hi</div>`)
-  })
-
-  // #9421 the other side of unification is also needed
-  // for library authors
-  it('scoped slots should also be available on this.$slots', () => {
-    const Child = {
-      render: function (h) {
-        return h(
-          'div',
-          this.$slots.content
-        )
-      }
-    }
-    const vm = new Vue({
-      template: `<child><template #content>foo</template></child>`,
-      components: { Child }
-    }).$mount()
-    expect(vm.$el.innerHTML).toBe(`foo`)
   })
 
   // #4779
@@ -933,6 +915,123 @@ describe('Component scoped slot', () => {
       // should only trigger child update
       expect(parentUpdate.calls.count()).toBe(1)
       expect(childUpdate.calls.count()).toBe(1)
+    }).then(done)
+  })
+
+  // #9432: async components inside a scoped slot should trigger update of the
+  // component that invoked the scoped slot, not the lexical context component.
+  it('async component inside scoped slot', done => {
+    let p
+    const vm = new Vue({
+      template: `
+        <foo>
+          <template #default>
+            <bar />
+          </template>
+        </foo>
+      `,
+      components: {
+        foo: {
+          template: `<div>foo<slot/></div>`
+        },
+        bar: resolve => {
+          setTimeout(() => {
+            resolve({
+              template: `<div>bar</div>`
+            })
+            next()
+          }, 0)
+        }
+      }
+    }).$mount()
+
+    function next () {
+      waitForUpdate(() => {
+        expect(vm.$el.textContent).toBe(`foobar`)
+      }).then(done)
+    }
+  })
+
+  // regression #9396
+  it('should not force update child with no slot content', done => {
+    const Child = {
+      updated: jasmine.createSpy(),
+      template: `<div></div>`
+    }
+
+    const parent = new Vue({
+      template: `<div>{{ count }}<child/></div>`,
+      data: {
+        count: 0
+      },
+      components: { Child }
+    }).$mount()
+
+    expect(parent.$el.textContent).toBe(`0`)
+    parent.count++
+    waitForUpdate(() => {
+      expect(parent.$el.textContent).toBe(`1`)
+      expect(Child.updated).not.toHaveBeenCalled()
+    }).then(done)
+  })
+
+  // regression #9438
+  it('nested scoped slots update', done => {
+    const Wrapper = {
+      template: `<div><slot/></div>`
+    }
+
+    const Inner = {
+      props: ['foo'],
+      template: `<div>{{ foo }}</div>`
+    }
+
+    const Outer = {
+      data: () => ({ foo: 1 }),
+      template: `<div><slot :foo="foo" /></div>`
+    }
+
+    const vm = new Vue({
+      components: { Outer, Wrapper, Inner },
+      template: `
+        <outer ref="outer" v-slot="props">
+          <wrapper v-slot>
+            <inner :foo="props.foo"/>
+          </wrapper>
+        </outer>
+      `
+    }).$mount()
+
+    expect(vm.$el.textContent).toBe(`1`)
+
+    vm.$refs.outer.foo++
+    waitForUpdate(() => {
+      expect(vm.$el.textContent).toBe(`2`)
+    }).then(done)
+  })
+
+  it('dynamic v-bind arguments on <slot>', done => {
+    const Foo = {
+      data() {
+        return {
+          key: 'msg'
+        }
+      },
+      template: `<div><slot :[key]="'hello'"/></div>`
+    }
+
+    const vm = new Vue({
+      components: { Foo },
+      template: `
+        <foo ref="foo" v-slot="props">{{ props }}</foo>
+      `
+    }).$mount()
+
+    expect(vm.$el.textContent).toBe(JSON.stringify({ msg: 'hello' }, null, 2))
+
+    vm.$refs.foo.key = 'changed'
+    waitForUpdate(() => {
+      expect(vm.$el.textContent).toBe(JSON.stringify({ changed: 'hello' }, null, 2))
     }).then(done)
   })
 })

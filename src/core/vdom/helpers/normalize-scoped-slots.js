@@ -1,6 +1,6 @@
 /* @flow */
 
-import { hasOwn } from 'shared/util'
+import { def } from 'core/util/lang'
 import { normalizeChildren } from 'core/vdom/helpers/normalize-children'
 
 export function normalizeScopedSlots (
@@ -16,7 +16,7 @@ export function normalizeScopedSlots (
     res = {}
     for (const key in slots) {
       if (slots[key] && key[0] !== '$') {
-        res[key] = normalizeScopedSlot(normalSlots, key, slots[key])
+        res[key] = normalizeScopedSlot(slots[key])
       }
     }
   }
@@ -26,25 +26,18 @@ export function normalizeScopedSlots (
       res[key] = proxyNormalSlot(normalSlots, key)
     }
   }
-  res._normalized = true
-  res.$stable = slots ? slots.$stable : true
+  def(res, '_normalized', true)
+  def(res, '$stable', slots ? !!slots.$stable : true)
   return res
 }
 
-function normalizeScopedSlot(normalSlots, key, fn) {
-  const normalized = (scope = {}) => {
+function normalizeScopedSlot(fn: Function): Function {
+  return scope => {
     const res = fn(scope)
     return res && typeof res === 'object' && !Array.isArray(res)
       ? [res] // single vnode
       : normalizeChildren(res)
   }
-  // proxy scoped slots on normal $slots
-  if (!hasOwn(normalSlots, key)) {
-    Object.defineProperty(normalSlots, key, {
-      get: normalized
-    })
-  }
-  return normalized
 }
 
 function proxyNormalSlot(slots, key) {
